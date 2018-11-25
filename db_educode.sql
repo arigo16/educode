@@ -1,20 +1,22 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.11
--- http://www.phpmyadmin.net
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: 25 Nov 2018 pada 11.21
--- Versi Server: 5.6.21
--- PHP Version: 5.6.3
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 25 Nov 2018 pada 15.17
+-- Versi server: 10.1.36-MariaDB
+-- Versi PHP: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `db_educode`
@@ -23,34 +25,149 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `users`
+-- Struktur dari tabel `tb_jurusan`
 --
 
-CREATE TABLE IF NOT EXISTS `users` (
-  `username` varchar(8) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `fullname` varchar(30) NOT NULL,
-  `authorization` varchar(20) NOT NULL
+CREATE TABLE `tb_jurusan` (
+  `id_jurusan` int(11) NOT NULL,
+  `nama_jurusan` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data untuk tabel `users`
+-- Struktur dari tabel `tb_pengajuan`
 --
 
-INSERT INTO `users` (`username`, `password`, `fullname`, `authorization`) VALUES
-('ari', 'e30338564ba78780524d64853cce568a', 'Arigo', 'Administrator'),
-('budi', 'e30338564ba78780524d64853cce568a', 'Dwi Budi Kurniawan', 'Mahasiswa'),
-('nasrul', 'e30338564ba78780524d64853cce568a', 'Nasrul Hidayah', 'Ketua Jurusan');
+CREATE TABLE `tb_pengajuan` (
+  `id_pengajuan` int(11) NOT NULL,
+  `id_user` varchar(45) DEFAULT NULL,
+  `id_jurusan` int(11) DEFAULT NULL,
+  `tgl_pengajuan` datetime DEFAULT NULL,
+  `status` varchar(45) DEFAULT NULL,
+  `tgl_periksa` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_pengajuan_detail`
+--
+
+CREATE TABLE `tb_pengajuan_detail` (
+  `id_pengajuan` int(11) NOT NULL,
+  `id_tema` int(11) DEFAULT NULL,
+  `id_platform` int(11) DEFAULT NULL,
+  `judul_skripsi` varchar(45) DEFAULT NULL,
+  `link_file` varchar(100) DEFAULT NULL,
+  `status` varchar(45) DEFAULT NULL,
+  `keterangan` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_platform`
+--
+
+CREATE TABLE `tb_platform` (
+  `id_platform` int(11) NOT NULL,
+  `nama_platform` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_tema`
+--
+
+CREATE TABLE `tb_tema` (
+  `id_tema` int(11) NOT NULL,
+  `nama_tema` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_user`
+--
+
+CREATE TABLE `tb_user` (
+  `id_user` varchar(45) NOT NULL,
+  `id_jurusan` int(11) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  `nama` varchar(45) DEFAULT NULL,
+  `otorisasi` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `tb_jurusan`
 --
-ALTER TABLE `users`
- ADD PRIMARY KEY (`username`);
+ALTER TABLE `tb_jurusan`
+  ADD PRIMARY KEY (`id_jurusan`);
+
+--
+-- Indeks untuk tabel `tb_pengajuan`
+--
+ALTER TABLE `tb_pengajuan`
+  ADD PRIMARY KEY (`id_pengajuan`);
+
+--
+-- Indeks untuk tabel `tb_pengajuan_detail`
+--
+ALTER TABLE `tb_pengajuan_detail`
+  ADD PRIMARY KEY (`id_pengajuan`);
+
+--
+-- Indeks untuk tabel `tb_platform`
+--
+ALTER TABLE `tb_platform`
+  ADD PRIMARY KEY (`id_platform`);
+
+--
+-- Indeks untuk tabel `tb_tema`
+--
+ALTER TABLE `tb_tema`
+  ADD PRIMARY KEY (`id_tema`);
+
+--
+-- Indeks untuk tabel `tb_user`
+--
+ALTER TABLE `tb_user`
+  ADD PRIMARY KEY (`id_user`);
+
+--
+-- AUTO_INCREMENT untuk tabel yang dibuang
+--
+
+--
+-- AUTO_INCREMENT untuk tabel `tb_jurusan`
+--
+ALTER TABLE `tb_jurusan`
+  MODIFY `id_jurusan` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `tb_pengajuan`
+--
+ALTER TABLE `tb_pengajuan`
+  MODIFY `id_pengajuan` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `tb_platform`
+--
+ALTER TABLE `tb_platform`
+  MODIFY `id_platform` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `tb_tema`
+--
+ALTER TABLE `tb_tema`
+  MODIFY `id_tema` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
