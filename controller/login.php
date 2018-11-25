@@ -3,14 +3,14 @@
 	include '../include/config.php';
 
 	$user = $_POST['username'];
-	$pass = md5($_POST['password']);
+	$pass = $_POST['password'];
 
-	$r = $con->query("SELECT * FROM users WHERE username = '$user' AND password = '$pass'");
+	$r = $con->query("SELECT * FROM tb_user WHERE id_user = '$user' AND password = '$pass'");
 	if ($r -> num_rows > 0){
 		while ($rr = $r->fetch_array()){
-			$_SESSION['username'] = $rr['username'];
-			$_SESSION['fullname'] = $rr['fullname'];
-			$_SESSION['authorization'] = $rr['authorization'];
+			$_SESSION['username'] = $rr['id_user'];
+			$_SESSION['fullname'] = $rr['nama'];
+			$_SESSION['authorization'] = $rr['otorisasi'];
 		}
 		header("location:../index.php");
 	}else{

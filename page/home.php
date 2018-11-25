@@ -13,7 +13,7 @@
                 <div class="analytics-sparkle-line reso-mg-b-30">
                     <div class="analytics-content">
                         <h5>Skripsi</h5>
-                        <h2><span class="counter">90</span> <span class="tuition-fees">Disetejui</span></h2>
+                        <h2><span class="counter">90</span> <span class="tuition-fees">Disetujui</span></h2>
                     </div>
                 </div>
             </div>
