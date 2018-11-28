@@ -1,18 +1,16 @@
 <?php
 session_start();
 
-  if (empty($_SESSION['username'])) {
+  if (empty($_SESSION['id_user'])) {
     header("location:login.php");
   }else{
-    if (isset($_SESSION['username'])) {
-        $user = trim($_SESSION['username']);
+    if (isset($_SESSION['id_user'])) {
+        $id_user = trim($_SESSION['id_user']);
     }
-    if (isset($_SESSION['authorization'])) {
-        $authorization = trim($_SESSION['authorization']);
+    if (isset($_SESSION['otorisasi'])) {
+        $otorisasi = trim($_SESSION['otorisasi']);
     }
     require_once('include/config.php');
-//   $base_url = ('http://'.$_SERVER['HTTP_HOST'].'/educode/index.php');
-
     isset ($_GET['page']) ? $page = $_GET['page'] : $page = 'home';
 ?>
 
@@ -43,6 +41,8 @@ session_start();
     <link rel="stylesheet" href="assets-admin/css/metisMenu/metisMenu-vertical.css">
     <link rel="stylesheet" href="assets-admin/css/calendar/fullcalendar.min.css">
     <link rel="stylesheet" href="assets-admin/css/calendar/fullcalendar.print.min.css">
+    <link rel="stylesheet" href="assets-admin/css/data-table/bootstrap-table.css">
+    <link rel="stylesheet" href="assets-admin/css/data-table/bootstrap-editable.css">
     <link rel="stylesheet" href="assets-admin/style.css">
     <link rel="stylesheet" href="assets-admin/css/responsive.css">
     <script src="assets-admin/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -84,6 +84,14 @@ session_start();
     <script src="assets-admin/js/counterup/counterup-active.js"></script>
     <script src="assets-admin/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets-admin/js/scrollbar/mCustomScrollbar-active.js"></script>
+    <script src="assets-admin/js/data-table/bootstrap-table.js"></script>
+    <script src="assets-admin/js/data-table/tableExport.js"></script>
+    <script src="assets-admin/js/data-table/data-table-active.js"></script>
+    <script src="assets-admin/js/data-table/bootstrap-table-editable.js"></script>
+    <script src="assets-admin/js/data-table/bootstrap-editable.js"></script>
+    <script src="assets-admin/js/data-table/bootstrap-table-resizable.js"></script>
+    <script src="assets-admin/js/data-table/colResizable-1.5.source.js"></script>
+    <script src="assets-admin/js/data-table/bootstrap-table-export.js"></script>
     <script src="assets-admin/js/metisMenu/metisMenu.min.js"></script>
     <script src="assets-admin/js/metisMenu/metisMenu-active.js"></script>
     <script src="assets-admin/js/morrisjs/raphael-min.js"></script>

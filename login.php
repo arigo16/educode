@@ -33,8 +33,8 @@
 						Educode Login
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate="Username is required">
-						<input class="input100" type="text" name="username" placeholder="Username">
+					<div class="wrap-input100 validate-input" data-validate="User ID is required">
+						<input class="input100" type="text" name="id_user" placeholder="User ID">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user" aria-hidden="true"></i>

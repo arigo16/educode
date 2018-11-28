@@ -8,7 +8,7 @@
             <nav class="sidebar-nav left-sidebar-menu-pro">
                 <ul class="metismenu" id="menu1">
                 <?php
-                    if ($authorization == "Administrator") {
+                    if ($otorisasi == "Administrator") {
                 ?>
                     <li>
                         <a href="index.php" aria-expanded="false"><span class="fa fa-home icon-wrap"></span> <span class="mini-click-non">Dashboard</span></a>
@@ -16,16 +16,16 @@
                     <li>
                         <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-file icon-wrap"></span> <span class="mini-click-non">Master</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
-                            <li><a href="#"><span class="mini-sub-pro">Mahasiswa</span></a></li>
-                            <li><a href="#"><span class="mini-sub-pro">Dosen</span></a></li>
+                            <li><a href="index.php?page=tema"><span class="mini-sub-pro">Tema</span></a></li>
+                            <li><a href="#"><span class="mini-sub-pro">Platform</span></a></li>
                             <li><a href="#"><span class="mini-sub-pro">User</span></a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-book icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
-                            <li><a href="#"><span class="mini-sub-pro">Ajukan Skripsi</span></a></li>
-                            <li><a href="#"><span class="mini-sub-pro">Persetujuan Skripsi</span></a></li>
+                            <li><a href="index.php?page=pengajuan-skripsi"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
+                            <li><a href="index.php?page=persetujuan-skripsi"><span class="mini-sub-pro">Persetujuan Skripsi</span></a></li>
                         </ul>
                     </li>
                     <li>
@@ -35,21 +35,27 @@
                         </ul>
                     </li>
                 <?php
-                    } else if ($authorization == "Mahasiswa") {
+                    } else if ($otorisasi == "Mahasiswa") {
                 ?>
+                    <li>
+                        <a href="index.php" aria-expanded="false"><span class="fa fa-home icon-wrap"></span> <span class="mini-click-non">Dashboard</span></a>
+                    </li>
                     <li>
                         <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-book icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
-                            <li><a href="#"><span class="mini-sub-pro">Ajukan Skripsi</span></a></li>
+                            <li><a href="index.php?page=pengajuan-skripsi"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
                         </ul>
                     </li>
                 <?php
-                    } else if ($authorization == "Ketua Jurusan") {
+                    } else if ($otorisasi == "Ketua Jurusan") {
                 ?>
+                    <li>
+                        <a href="index.php" aria-expanded="false"><span class="fa fa-home icon-wrap"></span> <span class="mini-click-non">Dashboard</span></a>
+                    </li>
                     <li>
                         <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-book icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
-                            <li><a href="#"><span class="mini-sub-pro">Persetujuan Skripsi</span></a></li>
+                            <li><a href="index.php?page=persetujuan-skripsi"><span class="mini-sub-pro">Persetujuan Skripsi</span></a></li>
                         </ul>
                     </li>
                     <li>
@@ -77,24 +83,27 @@
                     <nav id="dropdown">
                         <ul class="mobile-menu-nav">
                         <?php
-                            if ($authorization == "Administrator") {
+                            if ($otorisasi == "Administrator") {
                         ?>
+                            <li>
+                                <a href="index.php" aria-expanded="false"><span class="fa fa-home icon-wrap"></span> <span class="mini-click-non">Dashboard</span></a>
+                            </li>
                             <li>
                                 <a href="index.php" aria-expanded="false"><span class="fa fa-home icon-wrap"></span> <span class="mini-click-non">Dashboard</span></a>
                             </li>
                             <li>
                                 <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-file icon-wrap"></span> <span class="mini-click-non">Master</span></a>
                                 <ul class="submenu-angle" aria-expanded="false">
-                                    <li><a href="#"><span class="mini-sub-pro">Mahasiswa</span></a></li>
-                                    <li><a href="#"><span class="mini-sub-pro">Dosen</span></a></li>
+                                    <li><a href="index.php?page=tema"><span class="mini-sub-pro">Tema</span></a></li>
+                                    <li><a href="#"><span class="mini-sub-pro">Platform</span></a></li>
                                     <li><a href="#"><span class="mini-sub-pro">User</span></a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-book icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                                 <ul class="submenu-angle" aria-expanded="false">
-                                    <li><a href="#"><span class="mini-sub-pro">Ajukan Skripsi</span></a></li>
-                                    <li><a href="#"><span class="mini-sub-pro">Persetujuan Skripsi</span></a></li>
+                                    <li><a href="index.php?page=pengajuan-skripsi"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
+                                    <li><a href="index.php?page=persetujuan-skripsi"><span class="mini-sub-pro">Persetujuan Skripsi</span></a></li>
                                 </ul>
                             </li>
                             <li>
@@ -104,21 +113,27 @@
                                 </ul>
                             </li>
                         <?php
-                            } else if ($authorization == "Mahasiswa") {
+                            } else if ($otorisasi == "Mahasiswa") {
                         ?>
+                            <li>
+                                <a href="index.php" aria-expanded="false"><span class="fa fa-home icon-wrap"></span> <span class="mini-click-non">Dashboard</span></a>
+                            </li>
                             <li>
                                 <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-book icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                                 <ul class="submenu-angle" aria-expanded="false">
-                                    <li><a href="#"><span class="mini-sub-pro">Ajukan Skripsi</span></a></li>
+                                    <li><a href="index.php?page=pengajuan-skripsi"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
                                 </ul>
                             </li>
                         <?php
-                            } else if ($authorization == "Ketua Jurusan") {
+                            } else if ($otorisasi == "Ketua Jurusan") {
                         ?>
+                            <li>
+                                <a href="index.php" aria-expanded="false"><span class="fa fa-home icon-wrap"></span> <span class="mini-click-non">Dashboard</span></a>
+                            </li>
                             <li>
                                 <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-book icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                                 <ul class="submenu-angle" aria-expanded="false">
-                                    <li><a href="#"><span class="mini-sub-pro">Persetujuan Skripsi</span></a></li>
+                                    <li><a href="index.php?page=persetujuan-skripsi"><span class="mini-sub-pro">Persetujuan Skripsi</span></a></li>
                                 </ul>
                             </li>
                             <li>
