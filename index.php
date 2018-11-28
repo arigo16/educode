@@ -4,16 +4,16 @@ session_start();
   if (empty($_SESSION['username'])) {
     header("location:login.php");
   }else{
-  if (isset($_SESSION['username'])) {
-    $user = trim($_SESSION['username']);
-  }
-  if (isset($_SESSION['authorization'])) {
-    $authorization = trim($_SESSION['authorization']);
-  }
-  require_once('include/config.php');
-  $base_url = ('http://'.$_SERVER['HTTP_HOST'].'/mart212/index.php');
+    if (isset($_SESSION['username'])) {
+        $user = trim($_SESSION['username']);
+    }
+    if (isset($_SESSION['authorization'])) {
+        $authorization = trim($_SESSION['authorization']);
+    }
+    require_once('include/config.php');
+//   $base_url = ('http://'.$_SERVER['HTTP_HOST'].'/educode/index.php');
 
-  isset ($_GET['page']) ? $page = $_GET['page'] : $page = 'home';
+    isset ($_GET['page']) ? $page = $_GET['page'] : $page = 'home';
 ?>
 
 <!doctype html>
@@ -63,9 +63,9 @@ session_start();
         if(isset($_SESSION['pesan'])){echo $_SESSION['pesan']; unset($_SESSION['pesan']);}
 
         if(file_exists('page/'.$page.'.php')){
-        include ('page/'.$page.'.php');
+            include ('page/'.$page.'.php');
         }else{
-        include ('page/404.php');
+            include ('page/404.php');
         }
 
     ?>
