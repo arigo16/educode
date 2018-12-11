@@ -43,6 +43,8 @@ session_start();
     <link rel="stylesheet" href="assets-admin/css/calendar/fullcalendar.print.min.css">
     <link rel="stylesheet" href="assets-admin/css/data-table/bootstrap-table.css">
     <link rel="stylesheet" href="assets-admin/css/data-table/bootstrap-editable.css">
+    <link rel="stylesheet" href="assets-admin/css/form/all-type-forms.css">
+    <link rel="stylesheet" href="assets-admin/css/tabs.css">
     <link rel="stylesheet" href="assets-admin/style.css">
     <link rel="stylesheet" href="assets-admin/css/responsive.css">
     <script src="assets-admin/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -103,6 +105,9 @@ session_start();
     <script src="assets-admin/js/calendar/moment.min.js"></script>
     <script src="assets-admin/js/calendar/fullcalendar.min.js"></script>
     <script src="assets-admin/js/calendar/fullcalendar-active.js"></script>
+    <script src="assets-admin/js/pdf/jquery.media.js"></script>
+    <script src="assets-admin/js/pdf/pdf-active.js"></script>
+    <script src="assets-admin/js/tab.js"></script>
     <script src="assets-admin/js/plugins.js"></script>
     <script src="assets-admin/js/main.js"></script>
 </body>

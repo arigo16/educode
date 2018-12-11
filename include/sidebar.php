@@ -17,21 +17,22 @@
                         <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-file icon-wrap"></span> <span class="mini-click-non">Master</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
                             <li><a href="index.php?page=tema"><span class="mini-sub-pro">Tema</span></a></li>
-                            <li><a href="#"><span class="mini-sub-pro">Platform</span></a></li>
-                            <li><a href="#"><span class="mini-sub-pro">User</span></a></li>
+                            <li><a href="index.php?page=platform"><span class="mini-sub-pro">Platform</span></a></li>
+                            <li><a href="index.php?page=jurusan"><span class="mini-sub-pro">Jurusan</span></a></li>
+                            <li><a href="index.php?page=user"><span class="mini-sub-pro">User</span></a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-book icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
-                            <li><a href="index.php?page=pengajuan-skripsi"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
+                            <li><a href="controller/pengajuan-skripsi.php"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
                             <li><a href="index.php?page=persetujuan-skripsi"><span class="mini-sub-pro">Persetujuan Skripsi</span></a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-clipboard icon-wrap"></span> <span class="mini-click-non">Laporan</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
-                            <li><a href="#"><span class="mini-sub-pro">Laporan Skripsi</span></a></li>
+                            <li><a href="index.php?page=laporan-skripsi"><span class="mini-sub-pro">Laporan Skripsi</span></a></li>
                         </ul>
                     </li>
                 <?php
@@ -43,7 +44,7 @@
                     <li>
                         <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-book icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
-                            <li><a href="index.php?page=pengajuan-skripsi"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
+                            <li><a href="controller/pengajuan-skripsi.php"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
                         </ul>
                     </li>
                 <?php
@@ -61,7 +62,7 @@
                     <li>
                         <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-clipboard icon-wrap"></span> <span class="mini-click-non">Laporan</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
-                            <li><a href="#"><span class="mini-sub-pro">Laporan Skripsi</span></a></li>
+                            <li><a href="index.php?page=laporan-skripsi"><span class="mini-sub-pro">Laporan Skripsi</span></a></li>
                         </ul>
                     </li>
                 <?php
@@ -95,21 +96,22 @@
                                 <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-file icon-wrap"></span> <span class="mini-click-non">Master</span></a>
                                 <ul class="submenu-angle" aria-expanded="false">
                                     <li><a href="index.php?page=tema"><span class="mini-sub-pro">Tema</span></a></li>
-                                    <li><a href="#"><span class="mini-sub-pro">Platform</span></a></li>
-                                    <li><a href="#"><span class="mini-sub-pro">User</span></a></li>
+                                    <li><a href="index.php?page=platform"><span class="mini-sub-pro">Platform</span></a></li>
+                                    <li><a href="index.php?page=jurusan"><span class="mini-sub-pro">Jurusan</span></a></li>
+                                    <li><a href="index.php?page=user"><span class="mini-sub-pro">User</span></a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-book icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                                 <ul class="submenu-angle" aria-expanded="false">
-                                    <li><a href="index.php?page=pengajuan-skripsi"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
+                                    <li><a href="controller/pengajuan-skripsi.php"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
                                     <li><a href="index.php?page=persetujuan-skripsi"><span class="mini-sub-pro">Persetujuan Skripsi</span></a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-clipboard icon-wrap"></span> <span class="mini-click-non">Laporan</span></a>
                                 <ul class="submenu-angle" aria-expanded="false">
-                                    <li><a href="#"><span class="mini-sub-pro">Laporan Skripsi</span></a></li>
+                                    <li><a href="index.php?page=laporan-skripsi"><span class="mini-sub-pro">Laporan Skripsi</span></a></li>
                                 </ul>
                             </li>
                         <?php
@@ -121,7 +123,7 @@
                             <li>
                                 <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-book icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
                                 <ul class="submenu-angle" aria-expanded="false">
-                                    <li><a href="index.php?page=pengajuan-skripsi"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
+                                    <li><a href="controller/pengajuan-skripsi.php"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
                                 </ul>
                             </li>
                         <?php
@@ -139,7 +141,7 @@
                             <li>
                                 <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-clipboard icon-wrap"></span> <span class="mini-click-non">Laporan</span></a>
                                 <ul class="submenu-angle" aria-expanded="false">
-                                    <li><a href="#"><span class="mini-sub-pro">Laporan Skripsi</span></a></li>
+                                    <li><a href="index.php?page=laporan-skripsi"><span class="mini-sub-pro">Laporan Skripsi</span></a></li>
                                 </ul>
                             </li>
                         <?php

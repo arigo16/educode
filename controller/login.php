@@ -9,6 +9,7 @@
 	if ($r -> num_rows > 0){
 		while ($rr = $r->fetch_array()){
 			$_SESSION['id_user'] = $rr['id_user'];
+			$_SESSION['id_jurusan'] = $rr['id_jurusan'];
 			$_SESSION['nama'] = $rr['nama'];
 			$_SESSION['otorisasi'] = $rr['otorisasi'];
 		}
