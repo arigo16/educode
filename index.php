@@ -43,8 +43,14 @@ session_start();
     <link rel="stylesheet" href="assets-admin/css/calendar/fullcalendar.print.min.css">
     <link rel="stylesheet" href="assets-admin/css/data-table/bootstrap-table.css">
     <link rel="stylesheet" href="assets-admin/css/data-table/bootstrap-editable.css">
+    <link rel="stylesheet" href="assets-admin/css/calendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="assets-admin/css/calendar/fullcalendar.print.min.css">
+    <link rel="stylesheet" href="assets-admin/css/datapicker/datepicker3.css">
+    <link rel="stylesheet" href="assets-admin/css/select2/select2.min.css">
     <link rel="stylesheet" href="assets-admin/css/form/all-type-forms.css">
     <link rel="stylesheet" href="assets-admin/css/tabs.css">
+    <link rel="stylesheet" href="assets-admin/css/ionRangeSlider/ion.rangeSlider.css">
+    <link rel="stylesheet" href="assets-admin/css/ionRangeSlider/ion.rangeSlider.skinFlat.css">
     <link rel="stylesheet" href="assets-admin/style.css">
     <link rel="stylesheet" href="assets-admin/css/responsive.css">
     <script src="assets-admin/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -94,6 +100,10 @@ session_start();
     <script src="assets-admin/js/data-table/bootstrap-table-resizable.js"></script>
     <script src="assets-admin/js/data-table/colResizable-1.5.source.js"></script>
     <script src="assets-admin/js/data-table/bootstrap-table-export.js"></script>
+    <script src="assets-admin/js/datapicker/bootstrap-datepicker.js"></script>
+    <script src="assets-admin/js/datapicker/datepicker-active.js"></script>
+    <script src="assets-admin/js/select2/select2.full.min.js"></script>
+    <script src="assets-admin/js/select2/select2-active.js"></script>
     <script src="assets-admin/js/metisMenu/metisMenu.min.js"></script>
     <script src="assets-admin/js/metisMenu/metisMenu-active.js"></script>
     <script src="assets-admin/js/morrisjs/raphael-min.js"></script>
@@ -107,6 +117,9 @@ session_start();
     <script src="assets-admin/js/calendar/fullcalendar-active.js"></script>
     <script src="assets-admin/js/pdf/jquery.media.js"></script>
     <script src="assets-admin/js/pdf/pdf-active.js"></script>
+    <script src="assets-admin/js/rangle-slider/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="assets-admin/js/rangle-slider/jquery-ui-touch-punch.min.js"></script>
+    <script src="assets-admin/js/rangle-slider/rangle-active.js"></script>
     <script src="assets-admin/js/tab.js"></script>
     <script src="assets-admin/js/plugins.js"></script>
     <script src="assets-admin/js/main.js"></script>
