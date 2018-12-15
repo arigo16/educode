@@ -22,13 +22,7 @@
                             <li><a href="index.php?page=user"><span class="mini-sub-pro">User</span></a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-book icon-wrap"></span> <span class="mini-click-non">Transaksi</span></a>
-                        <ul class="submenu-angle" aria-expanded="false">
-                            <li><a href="controller/pengajuan-skripsi.php"><span class="mini-sub-pro">Pengajuan Skripsi</span></a></li>
-                            <li><a href="index.php?page=persetujuan-skripsi"><span class="mini-sub-pro">Persetujuan Skripsi</span></a></li>
-                        </ul>
-                    </li>
+                    
                     <li>
                         <a href="" class="has-arrow" aria-expanded="false"><span class="fa fa-clipboard icon-wrap"></span> <span class="mini-click-non">Laporan</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
