@@ -30,7 +30,7 @@
     $judul_skripsi3 = $_POST['judul_skripsi3'];
     $keterangan3 = $_POST['keterangan3'];
 
-    $ekstensi_diperbolehkan1 = array('pdf');
+    $ekstensi_diperbolehkan1 = array('pdf, ppt, docx');
     $file1 = $_FILES['skripsi1']['name'];
     $x1 = explode('.', $file1);
     $ekstensi1 = strtolower(end($x1));

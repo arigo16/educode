@@ -1,4 +1,5 @@
 <?php
+    date_default_timezone_set("Asia/Jakarta");
     include ('../include/config.php');
 
     $id_pengajuan = $_GET['id_pengajuan'];
